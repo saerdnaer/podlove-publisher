@@ -48,6 +48,9 @@ class Podcast_Post_Type
             'show_in_rest' => true,
             'rest_base' => 'episodes',
             // 'rest_controller_class' => ...
+            'show_in_graphql' => true,
+            'graphql_single_name' => 'episode',
+            'graphql_plural_name' => 'episodes',
         ];
 
         new \Podlove\Podcast_Post_Meta_Box();
